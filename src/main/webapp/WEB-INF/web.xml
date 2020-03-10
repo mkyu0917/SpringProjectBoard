@@ -24,10 +24,22 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-		
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+	
+	<!--  UTF-8 인코딩 필터로 한글처리하는곳에 문제가 없도록 처리. k -->
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<pasram-value>UTF-8</pasram-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>	
 </web-app>
