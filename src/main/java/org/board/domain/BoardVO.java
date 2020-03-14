@@ -6,18 +6,18 @@ import java.util.Date;
 
 public class BoardVO {
 	
-	private Integer bon;
+	private Integer bno;
 	private String title;
 	private String content;
 	private String writer;
 	private Date regdate;
 	private int viewcnt;
 	
-	public Integer getBon() {
-		return bon;
+	public Integer getBno() {
+		return bno;
 	}
-	public void setBon(Integer bon) {
-		this.bon = bon;
+	public void setBno(Integer bno) {
+		this.bno = bno;
 	}
 	public String getTitle() {
 		return title;

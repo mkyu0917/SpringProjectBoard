@@ -23,7 +23,7 @@
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
-		<property name="configLocation" value="Classpath:/mybatis-config./xml"></property>
+		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
 		<property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml"></property>
 	</bean>
 	
@@ -32,5 +32,7 @@
 	</bean>
 	
 	<context:component-scan base-package="org.board.persistence"></context:component-scan>	
+	<context:component-scan base-package="org.board.service"></context:component-scan>
+	
 </beans>
 
