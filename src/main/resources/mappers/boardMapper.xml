@@ -28,16 +28,13 @@
 	</delete>
 	
 	<select id="listAll" resultType="org.board.domain.BoardVO">
-		<![CDATA[
+	
 			select
 			   bno, title, content, writer, regdate, viewcnt
 			  from
 			   tbl_board
-			 where bno > 0
+			 where bno 	<![CDATA[>]]> 0
 			 order by bno desc, regdate desc
-		]]>
-		
-		
 		
 	</select>
 

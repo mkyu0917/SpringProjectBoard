@@ -35,7 +35,7 @@
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
-			<pasram-value>UTF-8</pasram-value>
+			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
 	<filter-mapping>
